@@ -4,6 +4,8 @@ public class reverseString {
     public static void main(String[] args) {
         System.out.println(reverseString("Ferhat"));
         System.out.println(reverseString2("Ferhat"));
+        System.out.println(reverseString3("Ferhat"));
+        System.out.println(reverseString4("Ferhat"));
     }
 
     public static String reverseString(String str){
@@ -19,5 +21,17 @@ public class reverseString {
         }
 
         return result;
+    }
+
+    public static String reverseString3(String str){
+        String result="";
+        while (str.length()>0){
+            result+=str.charAt(str.length()-1);
+            str=str.substring(0,str.length()-1);
+        }
+        return result;
+    }
+    public static String reverseString4(String str){
+        return new StringBuffer(str).reverse().toString();
     }
 }
