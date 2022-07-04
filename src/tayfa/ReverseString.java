@@ -1,6 +1,6 @@
 package tayfa;
 
-public class reverseString {
+public class ReverseString {
     public static void main(String[] args) {
         System.out.println(reverseString("Ferhat"));
         System.out.println(reverseString2("Ferhat"));
